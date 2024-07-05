@@ -1,0 +1,234 @@
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	 display: block;
+}
+ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, button {
+	 margin: 0;
+	 padding: 0;
+	 border: 0;
+	 font-size: 100%;
+	 vertical-align: baseline;
+	 box-sizing: border-box;
+	 color: white;
+}
+ a:hover, button:hover {
+	 cursor: pointer;
+	 opacity: 0.6;
+}
+ .dnone {
+	 display: none;
+}
+ a {
+	 text-decoration: none;
+}
+ input {
+	 box-sizing: border-box;
+}
+ 
+ @font-face {
+	 font-family: 'Bebas Neue';
+	 font-style: normal;
+	 font-weight: bold;
+	 src: local('Bebas Neue Bold'), url('fonts/BebasNeueRegular.woff2') format('woff2');
+}
+ @font-face {
+	 font-family: 'Bebas Neue Bold';
+	 font-style: normal;
+	 font-weight: bold;
+	 src: local('Bebas Neue Bold'), url('fonts/BebasNeueBold.woff2') format('woff2');
+}
+ @font-face {
+	 font-family: 'Roboto Condensed';
+	 src: url('fonts/RobotoCondensed-Regular.ttf') format('truetype');
+	 font-weight: normal;
+	 font-style: normal;
+}
+ body {
+	 display: flex;
+	 flex-direction: column;
+	 min-height: 100dvh;
+}
+ .header {
+	 width: 100vw;
+	 min-height: 30vh;
+	 color: white;
+	 background-image: url(img/headerbg.png);
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	 flex-direction: column;
+	 top: 0;
+	 padding: 15px 0px;
+}
+ .header_h1 {
+	 font-family: 'Bebas Neue Bold';
+	 font-size: 76px;
+}
+ .header_h2 {
+	 font-family: 'Bebas Neue';
+	 font-size: 26px;
+	 width: 100%;
+	 max-width: 500px;
+	 margin: 0;
+	 text-align: center;
+}
+ @media (max-aspect-ratio: 1) {
+	 .header {
+		 min-height: 20vh;
+	}
+}
+ main {
+	 display: flex;
+	 justify-content: center;
+}
+ .form {
+	 display: flex;
+	 justify-content: center;
+	 width: 100%;
+	 max-width: 400px;
+	 flex-wrap: wrap;
+	 gap: 16px;
+}
+ .form_h1 {
+	 font-size: 32px;
+	 font-family: 'Roboto Condensed';
+	 color: black;
+}
+ .form_h2 {
+	 font-size: 22px;
+	 font-family: 'Roboto Condensed';
+	 color: black;
+}
+ .form_inputs_wrapper {
+	 display: flex;
+	 justify-content: center;
+	 column-gap: 16px;
+	 width: 100%;
+}
+ .form_field {
+	 width: 100%;
+	 height: 40px;
+	 background: #f1f1f1;
+	 box-shadow: inset 2px 2px 5px #0005;
+	 border-radius: 10px;
+	 padding: 10px;
+	 border: none;
+	 transition: 500ms box-shadow;
+}
+ .form_field:focus {
+	 outline: none;
+	 box-shadow: inset 2px 2px 5px #0005;
+}
+ .form_btn {
+	 background: transparent;
+	 color: #045346;
+	 border: 2px solid #045346;
+	 padding: 10px 20px;
+	 font-family: 'Roboto Condensed';
+	 cursor: pointer;
+	 border-radius: 35px;
+}
+ @media (max-aspect-ratio: 1) {
+	 .form {
+		 padding-top: 50px;
+	}
+	 .form_h1 {
+		 font-size: 60px;
+		 font-family: 'Roboto Condensed';
+		 color: black;
+	}
+	 .form_h2 {
+		 font-size: 30px;
+		 font-family: 'Roboto Condensed';
+		 color: black;
+	}
+	 .form_inputs_wrapper {
+		 display: flex;
+		 justify-content: center;
+		 width: 100%;
+		 flex-direction: column;
+		 font-family: "Roboto Condensed";
+	}
+}
+ .form_field {
+	 font-family: "Roboto Condensed";
+}
+ .desc {
+	 display: flex;
+	 justify-content: center;
+	 flex-wrap: wrap;
+	 width: 100%;
+	 flex-direction: row;
+	 gap: 30px;
+	 margin-top: 50px;
+	 padding-top: 50px;
+}
+ .desc_element {
+	 display: flex;
+	 width: 90px;
+	 justify-content: center;
+	 align-items: center;
+	 flex-direction: column;
+}
+ .desc_element_content {
+	 display: flex;
+	 justify-content: center;
+	 flex-wrap: wrap;
+	 height: 70px;
+	 align-content: space-between;
+}
+ .desc_element_img {
+	 width: 100%;
+	 max-height: 45px;
+	 object-fit: contain;
+}
+ .desc_element_text {
+	 font-family: 'Roboto Condensed';
+	 color: black;
+	 font-size: 10px;
+	 width: 100%;
+	 text-align: center;
+}
+ .desc_element_button {
+	 background: transparent;
+	 color: #045346;
+	 border: 2px solid #045346;
+	 padding: 10px 20px;
+	 font-family: 'Roboto Condensed';
+	 cursor: pointer;
+	 border-radius: 35px;
+	 margin-top: 20px;
+}
+ .footer {
+	 display: flex;
+	 width: 100%;
+	 justify-content: center;
+	 padding-top: 150px;
+	 gap: 20px;
+	 flex-wrap: wrap;
+}
+ .footer_h4 {
+	 font-family: "Roboto Condensed";
+	 color: black;
+}
+ @media (max-aspect-ratio: 1) {
+	 .footer {
+		 padding-top: 250px;
+	}
+}
+ .mail {
+	 position: absolute;
+	 left: 40%;
+	 opacity: 1;
+	 width: 20%;
+	 opacity: 0;
+	 transition: opacity 2s ease;
+}
+ @media (max-aspect-ratio: 1) {
+	 .mail {
+		 width: 40%;
+		 left: 32%;
+		 opacity: 0;
+		 transition: opacity 2s ease;
+	}
+}
+ 
